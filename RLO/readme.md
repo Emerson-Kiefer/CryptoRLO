@@ -9,19 +9,16 @@ The library is organized into the following structure:
 ```plaintext
 cryptogame/
 |-- games/
-|   |-- __init__.py
-|   |-- uf_cma.py
-|   |-- ind_cpa.py
-|   |-- int_ctxt.py
-|   |-- prf.py
 |   |-- ufcma.py
+|   |-- indcpa.py
+|   |-- intctxt.py
+|   |-- prf.py
+|   |-- cr.py
 |-- tools/
-|   |-- __init__.py
 |   |-- aes.py
 |   |-- block_cipher.py
 |   |-- modes_of_operation.py
 |   |-- utils.py
-|-- __init__.py
 |-- simulate.py
 ```
 
@@ -33,7 +30,7 @@ The games submodule contains modules for each cryptographic game.
 - `ind_cpa.py`: Indistinguishability under Chosen-Plaintext Attack (IND-CPA) game.
 - `int_ctxt.py`: Integrity under Chosen-Ciphertext Attack (INT-CTXT) game.
 - `prf.py`: Pseudorandom Function (PRF) game.
-- `ufcma.py`: Universal Forgery under Chosen-Message Attack (UF-CMA) game.
+- `cr.py`: CR game
 
 ### Tools Submodule
 
@@ -55,11 +52,11 @@ The simulate submodule contains the Simulate class, which provides methods for s
 
 For detailed usage examples and demonstrations of each cryptographic game, refer to the corresponding Jupyter Notebook files in the `games` folder.
 
-- [UF-CMA Game Example](/RLO/uf_cma.ipynb)
-- [IND-CPA Game Example](/RLO/ind_cpa.ipynb)
-- [INT-CTXT Game Example](/RLO/int_ctxt.ipynb)
+- [UF-CMA Game Example](/RLO/mac.ipynb)
+- [IND-CPA Game Example](/RLO/indcpa.ipynb)
+- [INT-CTXT Game Example](/RLO/intctxt.ipynb)
 - [PRF Game Example](/RLO/prf.ipynb)
-- [UFCMA Game Example](/RLO/ufcma.ipynb)
+- [CR Game Example](/RLO/hash.ipynb)
 
 ### Acknowledgments
 
