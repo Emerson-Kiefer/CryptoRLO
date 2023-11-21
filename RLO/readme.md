@@ -29,7 +29,7 @@ cryptogame/
 
 The games submodule contains modules for each cryptographic game.
 
-- `uf_cma.py`: Universal Forgery under Chosen-Message Attack (UF-CMA) game.
+- `uf_cma.py`: UF-CMA game.
 - `ind_cpa.py`: Indistinguishability under Chosen-Plaintext Attack (IND-CPA) game.
 - `int_ctxt.py`: Integrity under Chosen-Ciphertext Attack (INT-CTXT) game.
 - `prf.py`: Pseudorandom Function (PRF) game.
@@ -39,8 +39,8 @@ The games submodule contains modules for each cryptographic game.
 
 The tools submodule contains utility modules and implementations of cryptographic primitives used in the games.
 
-- `aes.py`: Implementation of the Advanced Encryption Standard (AES) algorithm.
-- `block_cipher.py`: Generic implementation of a block cipher.
+- `aes.py`: Implementation of the Advanced Encryption Standard (AES) algorithm has evaluate and inverse functions. 
+- `block_cipher.py`: Generic implementation of a block cipher has evaluate and inverse functions. 
 - `modes_of_operation.py`: Implementations of various modes of operation for block ciphers.
 - `utils.py`: Utility functions used across the library.
 
@@ -55,11 +55,11 @@ The simulate submodule contains the Simulate class, which provides methods for s
 
 For detailed usage examples and demonstrations of each cryptographic game, refer to the corresponding Jupyter Notebook files in the `games` folder.
 
-- [UF-CMA Game Example](/uf_cma.ipynb)
-- [IND-CPA Game Example](/ind_cpa.ipynb)
-- [INT-CTXT Game Example](/int_ctxt.ipynb)
-- [PRF Game Example](/prf.ipynb)
-- [UFCMA Game Example](/ufcma.ipynb)
+- [UF-CMA Game Example](/RLO/uf_cma.ipynb)
+- [IND-CPA Game Example](/RLO/ind_cpa.ipynb)
+- [INT-CTXT Game Example](/RLO/int_ctxt.ipynb)
+- [PRF Game Example](/RLO/prf.ipynb)
+- [UFCMA Game Example](/RLO/ufcma.ipynb)
 
 ### Acknowledgments
 
