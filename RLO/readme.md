@@ -23,6 +23,7 @@ cryptogame/
 |   |-- utils.py
 |-- __init__.py
 |-- simulate.py
+```
 
 ### Games Submodule
 
