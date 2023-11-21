@@ -1,11 +1,50 @@
 
 class Simulate:
+	"""
+    The Simulate class provides methods for simulating different cryptographic games and calculating the advantage
+    of an adversary against various security notions.
+
+    Attributes:
+        Game (object): The cryptographic game instance.
+        adversary: The adversary function that interacts with the cryptographic game.
+        n_iteration (int): The number of iterations for simulation.
+
+    Methods:
+        __init__(self, Game: object, adversary, n_iteration=1000) -> None:
+            Initializes a new Simulate instance.
+
+        simulate_INDCPA(self, verbose=False, n_iteration=1000):
+            Simulates the INDCPA (Indistinguishability under Chosen-Plaintext Attack) game and calculates the advantage
+            of the adversary.
+
+        simulate_PRF(self, verbose=False, n_iteration=1000):
+            Simulates the PRF (Pseudorandom Function) game and calculates the advantage of the adversary.
+
+        simulate_cr(self, verbose=False, n_iteration=1000):
+            Simulates the CR (Collision Resistance) game and calculates the advantage of the adversary.
+
+        simulate_ufcma(self, verbose=False, n_iteration=1000):
+            Simulates the UFCMA game and calculates the advantage
+            of the adversary.
+
+        simulate_intctxt(self, verbose=False, n_iteration=1000):
+            Simulates the INTCTXT (Integrity under Chosen-Ciphertext Attack) game and calculates the advantage
+            of the adversary.
+		"""
 	def __init__(self, Game:object, adversary, n_iteration = 1000) -> None:
 		self.game = Game
 		self.adversary = adversary
 		self.n_iteration = n_iteration
 
 	def simulate_INDCPA(self, verbose = False, n_iteration = 1000):
+		"""
+        Simulates the INDCPA (Indistinguishability under Chosen-Plaintext Attack) game and calculates the advantage
+        of the adversary.
+
+        Parameters:
+            verbose (bool): If True, print detailed probabilities.
+            n_iteration (int): The number of iterations for simulation.
+        """
 		self.n_iteration = n_iteration
 		left_success = 0
 		left_game = 0
@@ -36,6 +75,13 @@ class Simulate:
 
 
 	def simulate_PRF(self, verbose = False, n_iteration = 1000):
+		"""
+        Simulates the PRF (Pseudorandom Function) game and calculates the advantage of the adversary.
+
+        Parameters:
+            verbose (bool): If True, print detailed probabilities.
+            n_iteration (int): The number of iterations for simulation.
+        """
 		self.n_iteration = n_iteration
 		real_success = 0
 		real_game = 0
@@ -66,6 +112,13 @@ class Simulate:
 
 
 	def simulate_cr(self, verbose = False, n_iteration = 1000):
+		"""
+        Simulates the CR (Collision Resistance) game and calculates the advantage of the adversary.
+
+        Parameters:
+            verbose (bool): If True, print detailed probabilities.
+            n_iteration (int): The number of iterations for simulation.
+        """
 		success = 0
 		for _ in range(n_iteration):
 			self.game._initialize()
@@ -79,6 +132,14 @@ class Simulate:
 
 
 	def simulate_ufcma(self, verbose = False, n_iteration = 1000):
+		"""
+        Simulates the UFCMA game and calculates the advantage
+        of the adversary.
+
+        Parameters:
+            verbose (bool): If True, print detailed probabilities.
+            n_iteration (int): The number of iterations for simulation.
+        """
 		success = 0
 		for _ in range(n_iteration):
 			self.game._initialize()
@@ -91,6 +152,14 @@ class Simulate:
 
 
 	def simulate_intctxt(self, verbose = False, n_iteration = 1000):
+		"""
+        Simulates the INTCTXT (Integrity under Chosen-Ciphertext Attack) game and calculates the advantage
+        of the adversary.
+
+        Parameters:
+            verbose (bool): If True, print detailed probabilities.
+            n_iteration (int): The number of iterations for simulation.
+        """
 		success = 0
 		for _ in range(n_iteration):
 			self.game._initialize()
