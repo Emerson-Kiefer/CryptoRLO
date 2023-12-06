@@ -6,6 +6,7 @@ The block cipher game is in src.
 # Installation
 
 Python Version >= 3.8
+
 pip install -i https://test.pypi.org/simple/ cryptogame==0.0.7
 
 [https://test.pypi.org/project/playcrypt/0.0.7/]
