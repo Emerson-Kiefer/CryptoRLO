@@ -1,5 +1,4 @@
-from tools.utils import *
-from tools.block_cipher import *
+from cryptogame.tools.block_cipher import *
 
 class PRF:
 	"""

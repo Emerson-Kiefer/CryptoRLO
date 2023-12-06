@@ -1,8 +1,8 @@
-from tools.utils import random_bits
+from cryptogame.tools.utils import random_bits
 
 class CR:
 	"""
-    The CR class represents a Collision Resistance (CR) game for hash functions. 
+    The CR class represents a Collision Resistance (CR) game for hash functions.
 
     Attributes:
         hash_function: User defined hash function
@@ -53,7 +53,7 @@ class CR:
 
 	def finalize(self, x1, x2):
 		"""
-        Finalizes the collision resistance game by computing the function on the inputs and the key. 
+        Finalizes the collision resistance game by computing the function on the inputs and the key.
 
         Parameters:
             x1: The first value to be compared.

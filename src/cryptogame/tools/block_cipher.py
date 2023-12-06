@@ -2,8 +2,8 @@ try:
 	from utils import random_bits
 	from functions import *
 except:
-	from tools.utils import random_bits, generate_binary_strings
-	from tools.functions import *
+	from cryptogame.tools.utils import random_bits, generate_binary_strings
+	from cryptogame.tools.functions import *
 
 
 class BlockCipher(Function):

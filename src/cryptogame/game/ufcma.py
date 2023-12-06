@@ -1,4 +1,4 @@
-from tools.utils import random_bits
+from cryptogame.tools.utils import random_bits
 
 class UFCMA:
 

@@ -3,7 +3,7 @@ try:
     from functions import *
 except:
 	from Crypto.Cipher import AES as AES_C
-	from tools.functions import *
+	from cryptogame.tools.functions import *
 
 
 
@@ -12,7 +12,7 @@ class AES(Function):
         super().__init__()
         self.key_len = key_len
         self.block_len = block_len
-    
+
     def evaluate(self, key, plaintext):
         """
         Encrypts m with AES in ECB mode.
@@ -26,7 +26,7 @@ class AES(Function):
         plaintext_bytes = bytes(int(plaintext[i:i+8], 2) for i in range(0, len(plaintext), 8))
         ciphertext = cipher.encrypt(plaintext_bytes)
         return ''.join(format(byte, '08b') for byte in ciphertext)
-    
+
     def inverse(self, key, ciphertext):
         """
         Decrypts c with AES in ECB mode.
@@ -56,4 +56,3 @@ if __name__ == "__main__":
     # Decrypt
     decrypted_message = aes.inverse(key, ciphertext)
     print("Decrypted message (binary):", decrypted_message)
-    

@@ -1,4 +1,4 @@
-from tools.utils import *
+from cryptogame.tools.utils import *
 
 class INDCPA:
 

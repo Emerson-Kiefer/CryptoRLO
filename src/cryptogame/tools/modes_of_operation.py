@@ -3,9 +3,9 @@ try:
 	from AES import *
 	from utils import *
 except:
-	from tools.block_cipher import *
-	from tools.AES import *
-	from tools.utils import *
+	from cryptogame.tools.block_cipher import *
+	from cryptogame.tools.AES import *
+	from cryptogame.tools.utils import *
 
 class ECB:
 
