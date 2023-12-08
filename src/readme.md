@@ -36,7 +36,7 @@ The games submodule contains modules for each cryptographic game.
 
 The tools submodule contains utility modules and implementations of cryptographic primitives used in the games.
 
-- `aes.py`: Implementation of the Advanced Encryption Standard (AES) algorithm has evaluate and inverse functions. 
+- `aes.py`: Implementation of the Advanced Encryption Standard (AES) algorithm - has evaluate and inverse functions. 
 - `block_cipher.py`: Generic implementation of a block cipher has evaluate and inverse functions. 
 - `modes_of_operation.py`: Implementations of various modes of operation for block ciphers.
 - `utils.py`: Utility functions used across the library.
@@ -50,7 +50,7 @@ The simulate submodule contains the Simulate class, which provides methods for s
 
 ### Usage Examples
 
-For detailed usage examples and demonstrations of each cryptographic game, refer to the corresponding Jupyter Notebook files in the `games` folder.
+For detailed usage examples and demonstrations of each cryptographic game, refer to the corresponding Jupyter Notebook files in the `test` folder.
 
 - [UF-CMA Game Example](/RLO/mac.ipynb)
 - [IND-CPA Game Example](/RLO/indcpa.ipynb)
