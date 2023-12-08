@@ -1,3 +1,4 @@
+
 # cryptogame Library
 
 The `cryptogame` library provides a collection of cryptographic games for educational and testing purposes. These games simulate various security scenarios and can be used to understand and evaluate the security properties of cryptographic primitives. The library allows to define protocols/ primitives and the adversary attacking the primitive. Currently it supports SK crypto. 
