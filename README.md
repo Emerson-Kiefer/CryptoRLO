@@ -6,7 +6,7 @@ The `cryptogame` library provides a collection of cryptographic games for educat
 Note: The library only supports binary strings eg '00001' or '11111000'. 
 Eg; `BlockCipher.evaluate(key = '0001', msg = '1111')`
 
-A good starting point to understand the lib would be `tests/hash.ipynb`. 
+A good starting point to understand the lib would be [`tests/hash.ipynb`](/src/test/mac.ipynb). 
 
 # Installation
 
