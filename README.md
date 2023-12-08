@@ -69,11 +69,11 @@ The simulate submodule contains the Simulate class, which provides methods for s
 
 For detailed usage examples and demonstrations of each cryptographic game, refer to the corresponding Jupyter Notebook files in the `test` folder.
 
-- [UF-CMA Game Example](/RLO/mac.ipynb)
-- [IND-CPA Game Example](/RLO/indcpa.ipynb)
-- [INT-CTXT Game Example](/RLO/intctxt.ipynb)
-- [PRF Game Example](/RLO/prf.ipynb)
-- [CR Game Example](/RLO/hash.ipynb)
+- [UF-CMA Game Example](/src/test/mac.ipynb)
+- [IND-CPA Game Example](/src/test/indcpa.ipynb)
+- [INT-CTXT Game Example](/src/test/intctxt.ipynb)
+- [PRF Game Example](/src/test/prf.ipynb)
+- [CR Game Example](/src/test/hash.ipynb)
 
 ### Acknowledgments
 
