@@ -44,29 +44,6 @@ def xor(x1, x2):
 	return result_str
 
 
-def print_table(data_dict):
-    # Create a table
-    table = PrettyTable()
-
-    # Get all unique keys
-    all_keys = set(key for keys in data_dict.keys() for key in keys)
-
-    # Set the column names
-    table.field_names = [''] + sorted(all_keys)
-
-    # Fill in the table data
-    for row_key in sorted(all_keys):
-        row = [row_key]
-        for col_key in sorted(all_keys):
-            if (row_key, col_key) in data_dict:
-                row.append(data_dict[(row_key, col_key)])
-            else:
-                row.append('')
-        table.add_row(row)
-
-    # Print the table
-    print(table)
-	
 
 def ctr_add(X, i, n):
     decimal_value = int(X, 2)
