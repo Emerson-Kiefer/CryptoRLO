@@ -2,7 +2,7 @@
 name = "cryptogame"
 version = "0.0.7"
 authors = [
-  { name="UMass 2023 TA Group 5", email="hojaeson@umass.com" },
+  { name="Hojae, Jenish, Emerson", email="jbajracharya@umass.com" },
 ]
 description = "A small example package"
 readme = "README.md"
