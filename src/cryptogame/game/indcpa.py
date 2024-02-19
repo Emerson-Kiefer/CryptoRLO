@@ -53,7 +53,6 @@ class INDCPA:
 				return 1
 			else:
 				return 0
-			
 		guess = adv(game)
 
 		game.finalize(guess)
