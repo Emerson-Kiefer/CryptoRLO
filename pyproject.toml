@@ -1,6 +1,6 @@
 [project]
-name = "cryptogame"
-version = "0.0.7"
+name = "cryptogames"
+version = "0.0.8"
 authors = [
   { name="Hojae, Jenish, Emerson", email="jbajracharya@umass.com" },
 ]

@@ -89,5 +89,3 @@ class PRF:
 			return True
 		else: 
 			return False
-
-
