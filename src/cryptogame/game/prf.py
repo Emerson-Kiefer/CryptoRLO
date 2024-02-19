@@ -70,7 +70,7 @@ class PRF:
 		if self._b == str(0):
 			return self._prf(self._k, m)
 		else:
-			return self._random.block_cipher(self._k, m)
+			return self._random.evaluate(self._k, m)
 		
 
 
